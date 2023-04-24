@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChargeEver</title>
+    <style>
+        * {
+			margin: 0;
+			padding: 0;
+		}
+		.t {
+			background-image: url(https://img.freepik.com/free-vector/network-mesh-w…l-technology-background_1017-27428.jpg?q=10&h=200);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+        .navbar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+		}
+        .background {
+			background: black;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+        .nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
+        .nav-list li {
+			list-style: none;
+			padding: 20px 30px;
+			margin: 0 20px;
+			display: inline-block;
+			position: relative;
+		}
+        .nav-list li a {
+			text-decoration: none;
+			text-transform: uppercase;
+			color: white;
+		}
+        .nav-list li ::after{
+			content: '';
+			height: 3px;
+			width: 0;
+			background: #009688;
+			position: absolute;
+			left:0;
+			bottom: 10px;
+			transition: 0.5s;
+		}
+		.nav-list li :hover::after{
+			width: 100%;
+		}
+        .firstsection {
+			align-items:center;
+			justify-content: center;
+			height: 750px;
+		}
+        .secondsection {	
+			align-items: center;
+			justify-content: center;
+			height: 400px;
+		}
+        .box-main {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: black;
+			max-width: 80%;
+			margin: auto;
+			height: 80%;
+		}
+        .firsthalf {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+        .secondhalf {
+			width: 30%;
+		}
+        .text-big {
+			font-family: 'Piazzolla', serif;
+			font-weight: bold;
+			font-size: 40px;
+		}
+        .text-small {
+			font-size: 25px;
+		}
+        .text{
+            font-size: 25px;
+        }
+		.pic{
+			display: block;
+			margin-left: 180px;
+			margin-right: 100px;
+			width: 50%;
+		}
+    </style>
+</head>
+<body>
+<div class="t">
+    <nav class="navbar background">
+		<ul class="nav-list">
+			<!--<div class="logo"><img src=''></div>-->
+			<li><a href="home">Intro</a></li>
+			<li><a href="EV Charging">EV Charging</a></li>
+			<li><a href="map">Map</a></li>
+			<li><a href="predict">Predicted Map</a></li>
+			<li><a href="conclusion">Conclusion</a></li>
+		</ul>
+	</nav>
+    <section class="firstsection" id="web">
+		<div class="box-main">
+			<div class="firstHalf" >
+				<h1 class="text-big" >EV Charging Station Works</h1>
+				<p class="text-small">
+					<br>&emsp;Electric vehicle charging works by transferring electrical energy from the charging station to the battery of the EV. The charging process involves three main components: the EV battery, the charging station, and the charging cable.
+                    <ol>
+                        <li style="font-size: 25px;">EV Battery: The EV battery is the power source for the vehicle and stores the electrical energy needed to power the electric motor.</li>
+                        
+                        <li style="font-size: 25px;">Charging Station: The charging station provides the electrical energy to charge the battery. It has a control unit that communicates with the EV to monitor the charging process and manage the electrical power flow.</li>
+                        
+                        <li style="font-size: 25px;">Charging Cable: The charging cable connects the EV to the charging station and allows the electrical energy to flow from the station to the battery.</li>
+                        
+                </ol>
+                    <br><div class="text">&emsp;When an EV is plugged into a charging station, the control unit communicates with the EV to determine the appropriate charging rate and power flow. The charging station then provides electrical energy to the battery through the charging cable. The battery charges until it reaches its capacity or until the charging session is ended manually.
+                    <br>
+                    &emsp;At our website, we provide information and resources to help EV owners and enthusiasts understand how electric vehicle charging works, and how to find and use charging stations that are compatible with their EVs. We also provide tips on maximizing the efficiency and longevity of EV batteries through proper charging practices.</div>
+				</p>
+			</div>
+		</div>
+	</section>
+    <section class="secondsection" >
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big" id="program">Types of charging levels</h1>
+				<p class="text-small" >
+					<br>
+					There are three main types of charging levels for electric vehicles (EVs): Level 1, Level 2, and DC Fast Charging (also known as Level 3).
+                    <ol>
+                    <br><li style="font-size: 25px;">
+                    Level 1 Charging: Level 1 charging uses a standard 120-volt household outlet and provides the slowest charging rate, typically around 3-5 miles of range per hour of charging. This is the most basic and widely available type of charging and can be done anywhere with an electrical outlet.</li>
+
+                    <li style="font-size: 25px;"> 2 Charging: Level 2 charging uses a 240-volt charging station and provides faster charging speeds, typically around 20-25 miles of range per hour of charging. This type of charging is commonly found in public charging stations and can be installed in homes or businesses with a dedicated circuit.</li>
+
+                    <li style="font-size: 25px;">DC Fast Charging: DC fast charging, also known as Level 3 charging, uses high-powered DC charging technology and can provide up to 80% charge in as little as 30 minutes. This type of charging is commonly found in highway rest stops, commercial charging stations, and some public locations.</li>
+                </ol>
+                    <br><div class="text">Different types of electric vehicles require different connector types for charging, including the CCS, CHAdeMO, and Tesla Supercharger connectors. It is important to check which connector type your EV requires before selecting a charging station.</div><br><br>
+				</p>
+			</div>
+		</div>
+		<div class="pic">
+			<br><br><br><br><br><br><img src= 'https://cdn.pixabay.com/photo/2016/10/13/22/30/tesla-1738969__480.jpg' alt="types EV" width="900" height="500">
+			<br><br><br>
+		</div>
+	</section>
+</div>
+</body>
+</html>

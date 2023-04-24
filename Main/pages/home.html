@@ -1,0 +1,235 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>ChargeEver</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		.t {
+			background-image: url(https://img.freepik.com/free-vector/network-mesh-w…l-technology-background_1017-27428.jpg?q=10&h=200);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+		}
+
+		.background {
+			background: black;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+
+		.nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.logo img {
+			width: 180px;
+			border-radius: 50px;
+		}
+
+		.nav-list li {
+			list-style: none;
+			padding: 20px 30px;
+			margin: 0 20px;
+			display: inline-block;
+			position: relative;
+		}
+
+		.nav-list li a {
+			text-decoration: none;
+			text-transform: uppercase;
+			color: white;
+		}
+
+		.nav-list li ::after{
+			content: '';
+			height: 3px;
+			width: 0;
+			background: #009688;
+			position: absolute;
+			left:0;
+			bottom: 10px;
+			transition: 0.5s;
+		}
+
+		.nav-list li :hover::after{
+			width: 100%;
+		}
+
+		.firstsection {
+			align-items: center;
+			justify-content: center;
+			height: 400px;
+		}
+
+		.secondsection {	
+			align-items: center;
+			justify-content: center;
+			height: 500px;
+		}
+
+		.box-main {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: black;
+			max-width: 80%;
+			margin: auto;
+			height: 80%;
+		}
+
+		.firsthalf {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.secondhalf {
+			width: 30%;
+		}
+
+		.text-big {
+			font-family: 'Piazzolla', serif;
+			font-weight: bold;
+			font-size: 40px;
+		}
+
+		.text-small {
+			font-size: 25px;
+		}
+
+		.section { 
+			height: 350px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			max-width: 90%;
+			margin: auto;
+		}
+
+		.section-Left {
+			flex-direction: row-reverse;
+		}
+
+		.paras {
+			padding: 0px 65px;
+		}
+
+		.center {
+			text-align: center;
+		}
+		.pic{
+			display: block;
+			margin-left: 180px;
+			margin-right: 100px;
+			width: 50%;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div class="t">
+		
+	<nav class="navbar background">
+		<ul class="nav-list">
+			<!--<div class="logo"><img src=''></div>-->
+			<li><a href="#web">Intro</a></li>
+			<li><a href="EV Charging">EV Charging</a></li>
+			<li><a href="map">Map</a></li>
+			<li><a href="predict">Predicted Map</a></li>
+			<li><a href="conclusion">Conclusion</a></li>
+		</ul>
+	</nav>
+	<div class="pic">
+		<img src= 'https://autostand.net/images/tesla-model-3.jpg' alt="EV" width="1000" height="500">
+	</div>
+	<section class="firstsection" id="web">
+		<div class="box-main">
+			<div class="firstHalf" >
+				<br>
+				<h1 class="text-big" >Introduction</h1>
+				<p class="text-small">
+					<br>
+					&emsp;Welcome to our EV charging station website! Our mission is to provide a comprehensive resource for electric vehicle owners and enthusiasts to find, use, and learn about EV charging stations. With the rise of electric vehicles as a sustainable mode of transportation, we believe that access to reliable and convenient charging infrastructure is crucial for EV adoption and reducing carbon emissions.
+					<br>
+					<br>
+					&emsp;Our website is designed to help you find nearby charging stations, learn about the different types of charging levels and equipment, and access EV charging services and resources. We also aim to promote sustainability and environmental awareness by providing educational content and news updates on the EV industry.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="secondsection" >
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big" id="program">Overview</h1>
+				<p class="text-small" >
+					<br>
+					&emsp;Electric vehicle (EV) charging stations are facilities that provide electric power to recharge the batteries of electric vehicles. There are different types of EV charging stations, each with different charging levels and speeds, and different connector types. Level 1 charging uses a standard 120-volt household outlet and provides the slowest charging rate, typically around 3-5 miles of range per hour of charging. Level 2 charging uses a 240-volt charging station and provides faster charging speeds, typically around 20-25 miles of range per hour of charging. DC fast charging, also known as Level 3 charging, uses high-powered DC charging technology and can provide up to 80% charge in as little as 30 minutes. Different types of electric vehicles require different connector types for charging, including the CCS, CHAdeMO, and Tesla Supercharger connectors. At our website, we provide information and resources to help EV owners and enthusiasts understand the different types of charging levels and equipment, and find the best charging options for their needs.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="section" id="con">
+		<div class="paras">
+			<h1 class="sectionTag text-big" >Benefits of EV</h1>
+
+			<p class="sectionSubTag text-small">
+				<br>
+				EV charging stations offer numerous benefits to EV owners and the environment. Some of the benefits include:
+				
+				<ol>
+				<br><li style="font-size: 25px;">Convenience: EV charging stations provide a convenient and reliable way to recharge EV batteries, especially for those who don't have access to a personal charging station at home.</li>
+
+				<li style="font-size: 25px;">Accessibility: As EV adoption continues to grow, the number of public charging stations is increasing, making it easier for EV drivers to find and use charging stations when they need them.</li>
+
+				<li style="font-size: 25px;">Sustainability: EVs have significantly lower carbon emissions than gas-powered vehicles, and charging them with renewable energy sources such as solar or wind power can further reduce their environmental impact.</li>
+
+				<li style="font-size: 25px;">Cost savings: Electric vehicles have lower operating costs than gas-powered vehicles, and EV charging costs are generally lower than gas prices in most regions.</li>
+
+				<li style="font-size: 25px;">Technology innovation: The growth of EV charging infrastructure is driving innovation in charging technology and renewable energy sources, which can have broader impacts on energy efficiency and sustainability.</li>
+			</ol>
+			<br><br><br>
+			</p>
+
+
+		</div>
+
+		
+	</section>
+
+	<div class="pic">
+		<br><br><br>
+		<img src= 'https://fleely.com/wp-content/uploads/2020/03/Top-scaled.jpg' alt="Benefits of EV" width="800" height="500">
+		<br><br><br>
+	</div>
+	</div>
+</body>
+
+</html>

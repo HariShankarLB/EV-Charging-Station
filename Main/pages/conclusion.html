@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChargeEver</title>
+    <style>
+        * {
+			margin: 0;
+			padding: 0;
+		}
+		.t {
+			background-image: url(https://img.freepik.com/free-vector/network-mesh-w…l-technology-background_1017-27428.jpg?q=10&h=200);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+        .navbar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+		}
+        .background {
+			background: black;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+        .nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
+        .nav-list li {
+			list-style: none;
+			padding: 20px 30px;
+			margin: 0 20px;
+			display: inline-block;
+			position: relative;
+		}
+        .nav-list li a {
+			text-decoration: none;
+			text-transform: uppercase;
+			color: white;
+		}
+        .nav-list li ::after{
+			content: '';
+			height: 3px;
+			width: 0;
+			background: #009688;
+			position: absolute;
+			left:0;
+			bottom: 10px;
+			transition: 0.5s;
+		}
+		.nav-list li :hover::after{
+			width: 100%;
+		}
+        .firstsection {
+			align-items: center;
+			justify-content: center;
+			height: 500px;
+		}
+        .secondsection {	
+			align-items: center;
+			justify-content: center;
+			height: 500px;
+		}
+        .box-main {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: black;
+			max-width: 80%;
+			margin: auto;
+			height: 80%;
+		}
+        .firsthalf {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+        .secondhalf {
+			width: 30%;
+		}
+        .text-big {
+			font-family: 'Piazzolla', serif;
+			font-weight: bold;
+			font-size: 40px;
+		}
+        .text-small {
+			font-size: 25px;
+		}
+        .text{
+            font-size: 25px;
+        }
+		.pic{
+			display: block;
+			margin-left: 180px;
+			margin-right: 100px;
+			width: 50%;
+		}
+    </style>
+</head>
+<body>
+	<div class="t">
+    <nav class="navbar background">
+		<ul class="nav-list">
+			<!--<div class="logo"><img src=''></div>-->
+			<li><a href="home">Intro</a></li>
+			<li><a href="EV Charging">EV Charging</a></li>
+			<li><a href="map">Map</a></li>
+			<li><a href="predict">Predicted Map</a></li>
+			<li><a href="conclusion">Conclusion</a></li>
+		</ul>
+	</nav>
+    <section class="firstsection">
+		<div class="box-main">
+			<div class="firstHalf" >
+				<h1 class="text-big" >Website's purpose</h1>
+				<p class="text-small">
+					<br>&emsp;The purpose of our EV charging station website is to provide information and resources for electric vehicle (EV) owners and enthusiasts. Our website offers an overview of EV charging stations, including the different types of charging levels and connector types, as well as their benefits. We also provide an explanation of how EV charging works and offer tips on maximizing the efficiency and longevity of EV batteries through proper charging practices.
+                    <br>
+                    &emsp;Our website is designed to be a comprehensive resource for EV owners and enthusiasts looking for information on charging options and best practices. We provide a directory of charging station locations, including maps and reviews from other EV drivers, to help users find the best charging options for their needs. Additionally, we offer a community forum where users can share tips and experiences, and ask questions related to EVs and charging.
+				</p>
+			</div>
+		</div>
+	</section>
+
+    <section class="secondsection" >
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big">Services</h1>
+				<p class="text-small" >
+					<br>An EV charging station website typically provides a variety of services to support electric vehicle (EV) owners and enthusiasts. Here are some common services that may be offered:
+                    <br><ul style="font-size: 25px;">
+                    <br><li>Charging Station Directory: A directory of charging station locations, including maps and reviews from other EV drivers, to help users find the best charging options for their needs.</li>
+
+                    <li>Charging Level Information: Detailed information on each of the charging levels, including the charging speeds, charging times, and connector types required.</li>
+
+                    <li>Charging Practices Tips: Tips on maximizing the efficiency and longevity of EV batteries through proper charging practices.</li>
+
+                    <li>Charging Station Installation Services: Information and resources on installing charging stations in homes or businesses.</li>
+
+                    <li>Support and Assistance: Customer support and assistance with EV-related issues, such as charging problems or maintenance needs.</li>
+                </ul>
+                    <br><div class="text">Overall, an EV charging station website provides a range of services to support the growing community of EV owners and enthusiasts. By providing reliable and helpful information and resources, these websites play an important role in promoting the use of EVs and supporting the transition to a more sustainable transportation system.</div><br><br>
+				</p>
+			</div>
+		</div>
+	</section>
+	<div class="pic">
+		<img src= 'https://www.precedenceresearch.com/insightimg/Electric-Vehicle-Market-Size.jpg' alt="EV" width="1000" height="500">
+	</div>
+</div>
+</body>
+</html>
