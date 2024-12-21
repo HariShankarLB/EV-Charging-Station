@@ -1,0 +1,4 @@
+folium==0.14.0
+Django==5.1
+pandas==1.5.3
+sklearn
